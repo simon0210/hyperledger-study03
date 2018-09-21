@@ -1,0 +1,29 @@
+{
+  "default": {
+    "org": "org1",
+    "member": "org1Admin",
+    "adminClient": true
+  },
+  "registrar": {
+    "org1": {
+      "name": "admin",
+      "password": "adminpw"
+    },
+    "org2": {
+      "name": "admin",
+      "password": "adminpw"
+    }
+  },
+  "adminCertPath": {
+    "org1": {
+      "member": "org1Admin",
+      "key": "adminCerts/org1.kt.com/keystore",
+      "cert": "adminCerts/org1.kt.com/signcerts"
+    },
+    "org2": {
+      "member": "org2Admin",
+      "key": "adminCerts/org2.kt.com/keystore",
+      "cert": "adminCerts/org2.kt.com/signcerts"
+    }
+  }
+}

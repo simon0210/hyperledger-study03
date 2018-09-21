@@ -1,0 +1,7 @@
+{
+  "clientPort": "4500",
+  "logLevel": "info",
+  "chaincodePath": "gopath",
+  "keyValStorePath": "key",
+  "startChannelNetwork": "channel_kt"
+}

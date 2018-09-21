@@ -1,0 +1,57 @@
+{
+  "channelName": "channel1",
+  "orderer": {
+    "orderer1": {
+      "mspid": "OrdererMSP",
+      "url": "grpcs://localhost:7050",
+      "server-hostname": "orderer.kt.com",
+      "tls_cacerts": "tlsCerts/orderer/tlsca.kt.com-cert.pem"
+    }
+  },
+  "orgs": {
+    "org1": {
+      "name": "peerOrg1",
+      "mspid": "Org1MSP",
+      "ca": {
+        "url": "https://localhost:7054",
+        "name": "ca-org1"
+      },
+      "peers": {
+        "peer1": {
+          "requests": "grpcs://localhost:7051",
+          "events": "grpcs://localhost:7053",
+          "server-hostname": "peer0.org1.kt.com",
+          "tls_cacerts": "tlsCerts/org1.kt.com/tlsca.org1.kt.com-cert.pem"
+        },
+        "peer2": {
+          "requests": "grpcs://localhost:8051",
+          "events": "grpcs://localhost:8053",
+          "server-hostname": "peer1.org1.kt.com",
+          "tls_cacerts": "tlsCerts/org1.kt.com/tlsca.org1.kt.com-cert.pem"
+        }
+      }
+    },
+    "org2": {
+      "name": "peerOrg2",
+      "mspid": "Org2MSP",
+      "ca": {
+        "url": "https://localhost:8054",
+        "name": "ca-org2"
+      },
+      "peers": {
+        "peer1": {
+          "requests": "grpcs://localhost:9051",
+          "events": "grpcs://localhost:9053",
+          "server-hostname": "peer0.org2.kt.com",
+          "tls_cacerts": "tlsCerts/org2.kt.com/tlsca.org2.kt.com-cert.pem"
+        },
+        "peer2": {
+          "requests": "grpcs://localhost:10051",
+          "events": "grpcs://localhost:10053",
+          "server-hostname": "peer1.org2.kt.com",
+          "tls_cacerts": "tlsCerts/org2.kt.com/tlsca.org2.kt.com-cert.pem"
+        }
+      }
+    }
+  }
+}
