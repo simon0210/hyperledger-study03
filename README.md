@@ -7,3 +7,18 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 
 source ~/.bashrc
 ```
+* 네트워크 시작
+
+```
+$)cd ~/github/hyperledger-study03/tools
+$)./4-node.sh
+$)./4-node-setup.sh
+```
+
+* app 시작
+
+```
+$)cd ~/github/hyperledger-study03
+$)nvm use 6
+$)node app.js
+```
