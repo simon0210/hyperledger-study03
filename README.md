@@ -1,4 +1,4 @@
-# FastCampus HLF 1기 
+# FastCampus HLF 5기 
 ## 사전 필요 사항 ##
 * nodeJS 6버전으로 실행
 * NVM 설치
